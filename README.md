@@ -23,20 +23,20 @@ Use len() to find the total words.
 
 ## PROGRAM:
 ```
-#Program to write a python program for getting the word count from the contents of a file using command line arguments.
-#Developed by: Jerowin Geo J A
-#Register Number: 212223100016
-def fun(filename,newfilename):
-    with open(filename) as fp:
-        with open(newfilename,'w') as fpl:
-            data=fp.read()
-            fpl.write(data)
-filename=input("Enter the file to read the content:")
-newfilename=input("Enter the file to store copied content:")
-fun(filename,newfilename)
+# Python program for getting the word count from the contents of a file using command line arguments.
+# Developed By: Jerowin Geo J A
+# Reference No: 212223100016
+
+import sys
+fp= open(sys.argv[1])
+data=fp.read()
+words=data.split()
+print("Total Words:",len(words))
+
 ```
 ### OUTPUT:
-![image](https://github.com/JerowinGeo/command-line-arguments-to-count-word/assets/147139744/79d33527-7b27-48c5-a685-d37025caadd1)
+![image](https://github.com/JerowinGeo/command-line-arguments-to-count-word/assets/147139744/66283868-c41d-4e57-baf4-5cd843a4d90b)
+![image](https://github.com/JerowinGeo/command-line-arguments-to-count-word/assets/147139744/ca44fa44-3cf8-4aa0-aae1-01d492538881)
 
 
 
